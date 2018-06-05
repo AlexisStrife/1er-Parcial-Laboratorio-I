@@ -216,7 +216,7 @@ void listarProd(eProducto prod[], int cantidad, eProveedor prov[])
                 case 7:
                     system("cls");
                     printf("Listado de Productos:\n\nCodigo\tDescripcion\tImporte\tCantidad\tProveedor\n");
-                    listaProdProv(prod, cantidad, prov);
+                    listaProductosProveedores(prod, cantidad, prov);
                     printf("\n");
                     break;
                 case 8:
@@ -238,7 +238,7 @@ void listarProd(eProducto prod[], int cantidad, eProveedor prov[])
                             if(cont > 0)
                             {
                                 printf("Listado de Productos:\n\nCodigo\tDescripcion\tImporte\tCantidad\tProveedor\n");
-                                listaProv(prod, cantidad, prov[i]);
+                                listaProveedor(prod, cantidad, prov[i]);
                                 flag = 1;
                                 break;
                             }
@@ -375,7 +375,7 @@ void toStringProv(eProveedor prov)
     printf("%d\t%s\n", prov.codigo, prov.descripcion);
 }
 
-void listaProdProv(eProducto prod[], int cantidad, eProveedor prov[])
+void listaProductosProveedores(eProducto prod[], int cantidad, eProveedor prov[])
 {
     int i, j;
     for(i=0; i<cantidad; i++)
@@ -391,7 +391,7 @@ void listaProdProv(eProducto prod[], int cantidad, eProveedor prov[])
     }
 }
 
-void listaProv(eProducto prod[], int cantidad, eProveedor prov)
+void listaProveedor(eProducto prod[], int cantidad, eProveedor prov)
 {
     int i;
     for(i=0; i<cantidad; i++)
@@ -403,7 +403,7 @@ void listaProv(eProducto prod[], int cantidad, eProveedor prov)
     }
 }
 
-void listaProvxProd(eProducto prod, int cantidad, eProveedor prov)
+void listaProductosxProveedor(eProducto prod, int cantidad, eProveedor prov)
 {
     printf("%d\t%s\t\t%.2f\t%d\t\t%s\n", prod.codigo, prod.descripcion, prod.importe, prod.cant, prov.descripcion);
 }
@@ -453,13 +453,13 @@ void calculaPrecio(eProducto prod[], int cantidad, int opcion, eProveedor prov[]
     if (opcion == 11)
     {
         printf("Listado de Productos:\n\nCodigo\tDescripcion\tImporte\tCantidad\tProveedor\n");
-        listaProvxProd(prod[indexCaroProd], cantidad, prov[indexCaroProv]);
+        listaProductosxProveedor(prod[indexCaroProd], cantidad, prov[indexCaroProv]);
         printf("\n");
     }
     else if (opcion == 12)
     {
         printf("Listado de Productos:\n\nCodigo\tDescripcion\tImporte\tCantidad\tProveedor\n");
-        listaProvxProd(prod[indexBaratoProd], cantidad, prov[indexBaratoProv]);
+        listaProductosxProveedor(prod[indexBaratoProd], cantidad, prov[indexBaratoProv]);
         printf("\n");
     }
 }
@@ -504,12 +504,12 @@ void listaMayMenProv(eProducto prod[], int cantidad, int opcion, eProveedor prov
     if(opcion == 9)
     {
         printf("Proveedor con mas Productos:\n\nCodigo\tDescripcion\tImporte\tCantidad\tProveedor\n");
-        listaProv(prod, cantidad, prov[indexMayorProv]);
+        listaProveedor(prod, cantidad, prov[indexMayorProv]);
     }
     else if(opcion == 10)
     {
         printf("Proveedor con menos Productos:\n\nCodigo\tDescripcion\tImporte\tCantidad\tProveedor\n");
-        listaProv(prod, cantidad, prov[indexMenorProv]);
+        listaProveedor(prod, cantidad, prov[indexMenorProv]);
     }
 }
 

@@ -9,6 +9,7 @@ void ordenarProd(eProducto prod[], int cantidad);
  * Lista un submenu para informar distintos datos segun se elija
  * @param prod el array se pasa como parametro
  * @param cantidad de productos en el array
+ * @param prov el array se pasa como parametro
  */
 void informarProd(eProducto prod[], int cantidad, eProveedor prov[]);
 
@@ -16,39 +17,39 @@ void informarProd(eProducto prod[], int cantidad, eProveedor prov[]);
  * Lista un submenu para listar distintos datos segun se elija
  * @param prod el array se pasa como parametro
  * @param cantidad de productos en el array
- * @param prov el array proveedores
+ * @param prov el array proveedores se pasa como parametro
  */
 void listarProd(eProducto prod[], int cantidad, eProveedor prov[]);
 
 /**
- * Lista un submenu para listar distintos datos segun se elija
+ * Lista los productos del proveedor pasado por parametro
  * @param prod el array se pasa como parametro
  * @param cantidad de productos en el array
- * @param prov el array proveedores
+ * @param prov el array proveedores se pasa como parametro
  */
-void listaProvxProd(eProducto prod, int cantidad, eProveedor prov);
+void listaProductosxProveedor(eProducto prod, int cantidad, eProveedor prov);
 
 /**
  * Lista el proveedor pasado por parametro y sus productos
  * @param prod el array se pasa como parametro
  * @param cantidad de productos en el array
- * @param prov el array proveedores
+ * @param prov el array proveedores se pasa como parametro
  */
-void listaProv(eProducto prod[], int cantidad, eProveedor prov);
+void listaProveedor(eProducto prod[], int cantidad, eProveedor prov);
 
 /**
  * Lista todos los proveedores y sus productos
  * @param prod el array se pasa como parametro
  * @param cantidad de productos en el array
- * @param prov el array proveedores
+ * @param prov el array proveedores se pasa como parametro
  */
- void listaProdProv(eProducto prod[], int cantidad, eProveedor prov[]);
+ void listaProductosProveedores(eProducto prod[], int cantidad, eProveedor prov[]);
 
  /**
  * Calcula el precio mas caro/barato del array
  * @param prod el array se pasa como parametro
  * @param cantidad de productos en el array
- * @param opcion seleccionada sobre que calcular
+ * @param opcion seleccionada sobre que mostrar
  * @param prov el array se pasa como parametro
  */
  void calculaPrecio(eProducto prod[], int cantidad, int opcion, eProveedor prov[]);
@@ -57,7 +58,7 @@ void listaProv(eProducto prod[], int cantidad, eProveedor prov);
  * Calcula el promedio de precios de los productos del array
  * @param prod el array se pasa como parametro
  * @param cantidad de productos en el array
- * @param opcion seleccionada sobre que calcular
+ * @param opcion seleccionada sobre que mostrar
  */
 void calculaPromedio(eProducto prod[], int cantidad, int opcion);
 
@@ -66,18 +67,18 @@ void calculaPromedio(eProducto prod[], int cantidad, int opcion);
  * @param prod el array se pasa como parametro
  * @param cantidad de productos en el array
  * @param opcion seleccionada sobre que calcular
- * @param prov el array de proveedores
+ * @param prov el array de proveedores se pasa como parametro
  */
 void calculaCantidad(eProducto prod[], int cantidad, int opcion, eProveedor prov[]);
 
 /**
- * Lista los productos
+ * Lista el producto pasado como parametro
  * @param prod el array se pasa como parametro
  */
 void toStringProd(eProducto prod);
 
 /**
- * Lista los proveedores
+ * Lista el proveedor pasado como parametro
  * @param prod el array se pasa como parametro
  */
 void toStringProv(eProveedor prov);
@@ -86,7 +87,7 @@ void toStringProv(eProveedor prov);
  * Lista los proveedores con mayor y menor productos
  * @param prod el array se pasa como parametro
  * @param cantidad de productos en el array
- * @param opcion seleccionada sobre que calcular
- * @param prov el array de proveedores
+ * @param opcion seleccionada sobre que mostrar
+ * @param prov el array de proveedores se pasa como parametro
  */
 void listaMayMenProv(eProducto prod[], int cantidad, int opcion, eProveedor prov[]);

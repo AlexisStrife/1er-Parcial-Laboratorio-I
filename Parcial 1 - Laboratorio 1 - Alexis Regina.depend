@@ -1,0 +1,104 @@
+# depslib dependency file v1.0
+1525740394 source:c:\users\alumno\desktop\parcial 1 - laboratorio 1 - alexis regina\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1525741677 source:c:\users\alumno\desktop\parcial 1 - laboratorio 1 - alexis regina\main.c
+	<stdio.h>
+	<stdlib.h>
+	"proveedores.h"
+	"productos.h"
+	"input.h"
+	"informes.h"
+
+1525734515 c:\users\alumno\desktop\parcial 1 - laboratorio 1 - alexis regina\proveedores.h
+
+1525741677 c:\users\alumno\desktop\parcial 1 - laboratorio 1 - alexis regina\productos.h
+
+1525733342 c:\users\alumno\desktop\parcial 1 - laboratorio 1 - alexis regina\input.h
+
+1525733812 c:\users\alumno\desktop\parcial 1 - laboratorio 1 - alexis regina\informes.h
+
+1525742773 source:c:\users\alumno\desktop\parcial 1 - laboratorio 1 - alexis regina\productos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"productos.h"
+	"informes.h"
+	"input.h"
+
+1525739206 source:c:\users\alumno\desktop\parcial 1 - laboratorio 1 - alexis regina\proveedores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"proveedores.h"
+	"informes.h"
+	"input.h"
+
+1526052636 source:c:\users\alexis.o.regina\desktop\parcial 1 - laboratorio 1 - alexis regina\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"proveedores.h"
+	"productos.h"
+	"informes.h"
+	"input.h"
+
+1528181987 source:c:\users\alexis.o.regina\desktop\parcial 1 - laboratorio 1 - alexis regina\main.c
+	<stdio.h>
+	<stdlib.h>
+	"proveedores.h"
+	"productos.h"
+	"informes.h"
+	"input.h"
+
+1525734515 c:\users\alexis.o.regina\desktop\parcial 1 - laboratorio 1 - alexis regina\proveedores.h
+
+1528172925 c:\users\alexis.o.regina\desktop\parcial 1 - laboratorio 1 - alexis regina\productos.h
+
+1525733342 c:\users\alexis.o.regina\desktop\parcial 1 - laboratorio 1 - alexis regina\input.h
+
+1528181648 c:\users\alexis.o.regina\desktop\parcial 1 - laboratorio 1 - alexis regina\informes.h
+
+1528181937 source:c:\users\alexis.o.regina\desktop\parcial 1 - laboratorio 1 - alexis regina\productos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"proveedores.h"
+	"productos.h"
+	"informes.h"
+	"input.h"
+
+1528138435 source:c:\users\alexis.o.regina\desktop\parcial 1 - laboratorio 1 - alexis regina\proveedores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"proveedores.h"
+	"productos.h"
+	"informes.h"
+	"input.h"
+
+1528181655 source:c:\users\alexis.o.regina\desktop\parcial 1 - laboratorio 1 - alexis regina\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"proveedores.h"
+	"productos.h"
+	"informes.h"
+	"input.h"
+
